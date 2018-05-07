@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ministerCell" rowHeight="258" id="6Ku-48-Nyu" customClass="SecondTableViewCell" customModule="Citoyen_beta_2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="255"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="6Ku-48-Nyu" id="pBD-Af-eBb">
+                <rect key="frame" x="0.0" y="0.0" width="325" height="254.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DPj-1p-X24">
+                        <rect key="frame" x="0.0" y="0.0" width="325" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="230" id="I9r-C4-8c1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="Muriel Penicaud, Ministre du Travail" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feU-Qg-osw">
+                        <rect key="frame" x="25" y="215" width="275" height="26"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="22"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DPj-1p-X24" firstAttribute="top" secondItem="pBD-Af-eBb" secondAttribute="top" id="2HL-Bh-hrH"/>
+                    <constraint firstAttribute="trailing" secondItem="DPj-1p-X24" secondAttribute="trailing" id="40A-sX-AxY"/>
+                    <constraint firstAttribute="trailing" secondItem="feU-Qg-osw" secondAttribute="trailing" constant="25" id="Iny-Lc-z8O"/>
+                    <constraint firstAttribute="bottom" secondItem="feU-Qg-osw" secondAttribute="bottom" constant="15" id="QVp-sS-tJx"/>
+                    <constraint firstItem="DPj-1p-X24" firstAttribute="leading" secondItem="pBD-Af-eBb" secondAttribute="leading" id="bgB-zB-Khh"/>
+                    <constraint firstItem="feU-Qg-osw" firstAttribute="top" secondItem="DPj-1p-X24" secondAttribute="bottom" constant="15" id="hcK-vX-bpd"/>
+                    <constraint firstItem="feU-Qg-osw" firstAttribute="leading" secondItem="pBD-Af-eBb" secondAttribute="leading" constant="25" id="lsU-i2-vJQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="3qv-Mw-4le"/>
+            <connections>
+                <outlet property="ministerPic" destination="DPj-1p-X24" id="jI3-uc-epd"/>
+                <outlet property="miniterName" destination="feU-Qg-osw" id="kUR-lW-NRK"/>
+            </connections>
+            <point key="canvasLocation" x="-120.5" y="-63.5"/>
+        </tableViewCell>
+    </objects>
+</document>
